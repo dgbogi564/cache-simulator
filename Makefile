@@ -8,8 +8,8 @@ OBJ := $(SRC:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
 
 
 CPPFLAGS := -MMD -MP -ggdb
-CFLAGS	 :=  -fsanitize=address -std=c11 -Wall -Werror
-LDFLAGS	 :=  -fsanitize=address -Llib
+CFLAGS	 := -fsanitize=address -std=c11 -Wall -Werror
+LDFLAGS	 := -fsanitize=address -Llib
 LDLIBS	 := -lm
 
 .PHONY: all env debug clean
