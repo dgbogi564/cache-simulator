@@ -8,7 +8,7 @@ OBJ := $(SRC:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
 
 
 CPPFLAGS := -MMD -MP -ggdb
-CFLAGS	 :=  -Wall -fsanitize=address -Werror -std=c11
+CFLAGS	 :=  -fsanitize=address -std=c11 -Wall -Werror
 LDFLAGS	 :=  -fsanitize=address -Llib
 LDLIBS	 := -lm
 
