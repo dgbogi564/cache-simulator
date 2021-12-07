@@ -8,8 +8,6 @@
 
 #include "cache.h"
 
-//#define CACHE_DEBUG 1 // TODO delete this
-
 #ifdef CACHE_DEBUG
 #define CACHE_DEBUG 1
 #else
@@ -49,7 +47,7 @@ typedef struct block_ {
 	uint64_t tag;                           /* the unique block identifier          */
 	uint64_t data;                          /* data stored in block                 */
 	#if CACHE_DEBUG
-		uint64_t orig_address;              /* original address parsed to the block */
+		uint64_t orig_address;		/* original address parsed to the block */
 	#endif
 } block_;
 
